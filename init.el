@@ -30,7 +30,9 @@
   (load custom-file))
 
 (defcustom dotemacs-modules
-  '(init-core
+  '(init-gui
+    init-os-keys
+    init-core
 
     init-eshell
     init-org
