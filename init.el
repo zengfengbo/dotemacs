@@ -31,7 +31,7 @@
 
 (defcustom dotemacs-modules
   '(init-gui
-    init-os-keys
+    init-osx-keys
     init-core
 
     init-eshell

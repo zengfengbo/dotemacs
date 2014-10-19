@@ -30,6 +30,17 @@
 (require 'evil-indent-textobject)
 (require 'evil-visualstar)
 (require 'evil-jumper)
+(define-key evil-insert-state-map "\C-e" 'end-of-line)
+(define-key evil-insert-state-map "\C-r" 'isearch-backward-regexp)
+(define-key evil-insert-state-map "\C-f" 'forward-char)
+(define-key evil-insert-state-map "\C-f" 'forward-char)
+(define-key evil-insert-state-map "\C-b" 'backward-char)
+(define-key evil-insert-state-map "\C-d" 'evil-delete-char)
+(define-key evil-insert-state-map "\C-n" 'evil-next-line)
+(define-key evil-insert-state-map "\C-p" 'evil-previous-line)
+(define-key evil-insert-state-map "\C-y" 'yank)
+(define-key evil-insert-state-map "\C-k" 'kill-line)
+
 
 (defcustom dotemacs-evil-state-modes
   '(fundamental-mode
